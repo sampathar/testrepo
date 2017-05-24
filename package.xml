@@ -9,6 +9,11 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>SiteHeader</members>
+        <members>SiteLogin</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
         <members>AppSwitcher</members>
         <name>AppMenu</name>
     </types>
