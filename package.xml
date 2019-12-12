@@ -3,6 +3,7 @@
     <version>45.0</version>
     <types>
         <members>A0</members>
+        <members>A000</members>
         <members>A0123</members>
         <members>Ac1</members>
         <members>Ac2</members>
