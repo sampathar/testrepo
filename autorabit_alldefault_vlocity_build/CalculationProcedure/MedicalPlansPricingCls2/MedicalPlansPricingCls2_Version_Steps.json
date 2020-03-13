@@ -1,0 +1,331 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "SGM",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/SGM",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "MedicalPlansPricingCls2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/MedicalPlansPricingCls2",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "MedicalPlansPricingCls2",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/MedicalPlansPricingCls2",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "65fc56",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "PlanID"
+            },
+            {
+                "columnKey": "4ef07a",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "QTR"
+            },
+            {
+                "columnKey": "8da882",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "RatingArea"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "d5b8ed",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "EE"
+            },
+            {
+                "columnKey": "1c455b",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "EESpouse"
+            },
+            {
+                "columnKey": "db0140",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "EEChild"
+            },
+            {
+                "columnKey": "bdecbd",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "EEFamily"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"EE\":\"SGM__EE\",\"EESpouse\":\"SGM__EESpouse\",\"EEChild\":\"SGM__EEChild\",\"EEFamily\":\"SGM__EEFamily\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "C1EE",
+                "dataType": "Number",
+                "text": "C1EE",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGM__EE",
+                "dataType": "Number",
+                "text": "EE ( SGM )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "C1EESp",
+                "dataType": "Number",
+                "text": "C1EESp",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGM__EESpouse",
+                "dataType": "Number",
+                "text": "EESpouse ( SGM )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "C1EECh",
+                "dataType": "Number",
+                "text": "C1EECh",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGM__EEChild",
+                "dataType": "Number",
+                "text": "EEChild ( SGM )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "C1EEFa",
+                "dataType": "Number",
+                "text": "C1EEFa",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGM__EEFamily",
+                "dataType": "Number",
+                "text": "EEFamily ( SGM )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationFormula__c": "C1EE * SGM__EE + C1EESp * SGM__EESpouse + C1EECh * SGM__EEChild + C1EEFa * SGM__EEFamily",
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "MedicalPlansPricingCls2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/MedicalPlansPricingCls2",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "MedicalPlansPricingCls2",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/MedicalPlansPricingCls2",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "C1EE"
+            },
+            {
+                "dataType": "Number",
+                "name": "C1EESp"
+            },
+            {
+                "dataType": "Number",
+                "name": "C1EECh"
+            },
+            {
+                "dataType": "Number",
+                "name": "C1EEFa"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "C1Total",
+            "dataType": "Number",
+            "name": "C1Total"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"C1Total\":\"C1Total\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "C2EE",
+                "dataType": "Number",
+                "text": "C2EE",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGM__EE",
+                "dataType": "Number",
+                "text": "EE ( SGM )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "C2EESp",
+                "dataType": "Number",
+                "text": "C2EESp",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGM__EESpouse",
+                "dataType": "Number",
+                "text": "EESpouse ( SGM )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "C2EECh",
+                "dataType": "Number",
+                "text": "C2EECh",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGM__EEChild",
+                "dataType": "Number",
+                "text": "EEChild ( SGM )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "C2EEFa",
+                "dataType": "Number",
+                "text": "C2EEFa",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGM__EEFamily",
+                "dataType": "Number",
+                "text": "EEFamily ( SGM )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationFormula__c": "C2EE * SGM__EE + C2EESp * SGM__EESpouse + C2EECh * SGM__EEChild + C2EEFa * SGM__EEFamily",
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "MedicalPlansPricingCls2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/MedicalPlansPricingCls2",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "MedicalPlansPricingCls2",
+            "%vlocity_namespace%__VersionNumber__c": 3,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/MedicalPlansPricingCls2",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "C2EE"
+            },
+            {
+                "dataType": "Number",
+                "name": "C2EESp"
+            },
+            {
+                "dataType": "Number",
+                "name": "C2EECh"
+            },
+            {
+                "dataType": "Number",
+                "name": "C2EEFa"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "C2Total",
+            "dataType": "Number",
+            "name": "C2Total"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"C2Total\":\"C2Total\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

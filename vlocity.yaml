@@ -2,4 +2,9 @@ projectPath: ./autorabit_alldefault_vlocity_build
 manifest:
 - CalculationProcedure/GACCalculationProcedure
 - CalculationProcedure/GAMewaAgeGenderFactorPerMember
+- CalculationProcedure/GAMewaTierFactor
+- CalculationProcedure/MedicalPlansPricing
+- CalculationProcedure/MedicalPlansPricingCls1
+- CalculationProcedure/MedicalPlansPricingCls2
+- CalculationProcedure/VisionPlansPricing
 maxDepth: -1

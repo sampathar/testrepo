@@ -1,0 +1,223 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "MedicalPlansPricing",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/MedicalPlansPricing",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "MedicalPlansPricing",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "MedicalPlansPricing_Version_Steps.json",
+    "%vlocity_namespace%__Constants__c": [
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "MedicalPlansPricing v3",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "GetProductAttributesService",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 3,
+    "%vlocity_namespace%__StartDateTime__c": "2016-07-11T21:06:35.000Z",
+    "%vlocity_namespace%__Variables__c": [
+        {
+            "alias": "C1EE",
+            "dataType": "Number",
+            "isEditable": false,
+            "name": "C1EE",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C1EESp",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C1EESp",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C1EECh",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C1EECh",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C1EEFa",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C1EEFa",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C2EE",
+            "dataType": "Number",
+            "isEditable": false,
+            "name": "C2EE",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C2EESp",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C2EESp",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C2EECh",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C2EECh",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C2EEFa",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C2EEFa",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C3EE",
+            "dataType": "Number",
+            "isEditable": false,
+            "name": "C3EE",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C3EESp",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C3EESp",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C3EECh",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C3EECh",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C3EEFa",
+            "dataType": "Number",
+            "isEditable": false,
+            "name": "C3EEFa",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C1Total",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "C1Total",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C2Total",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "C2Total",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C3Total",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "C3Total",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "PlanID",
+            "dataType": "Text",
+            "isEditable": false,
+            "matrixName": "SGM",
+            "name": "PlanID",
+            "typeaheadDisplayName": "PlanID",
+            "userDefined": false
+        },
+        {
+            "alias": "QTR",
+            "dataType": "Text",
+            "isEditable": false,
+            "matrixName": "SGM",
+            "name": "QTR",
+            "typeaheadDisplayName": "QTR",
+            "userDefined": false
+        },
+        {
+            "alias": "RatingArea",
+            "dataType": "Number",
+            "isEditable": false,
+            "matrixName": "SGM",
+            "name": "RatingArea",
+            "typeaheadDisplayName": "RatingArea",
+            "userDefined": false
+        },
+        {
+            "alias": "SGM__EE",
+            "dataType": "Number",
+            "isEditable": false,
+            "matrixName": "SGM",
+            "name": "EE",
+            "typeaheadDisplayName": "EE ( SGM )",
+            "userDefined": false
+        },
+        {
+            "alias": "SGM__EESpouse",
+            "dataType": "Number",
+            "isEditable": false,
+            "matrixName": "SGM",
+            "name": "EESpouse",
+            "typeaheadDisplayName": "EESpouse ( SGM )",
+            "userDefined": false
+        },
+        {
+            "alias": "SGM__EEChild",
+            "dataType": "Number",
+            "isEditable": false,
+            "matrixName": "SGM",
+            "name": "EEChild",
+            "typeaheadDisplayName": "EEChild ( SGM )",
+            "userDefined": false
+        },
+        {
+            "alias": "SGM__EEFamily",
+            "dataType": "Number",
+            "isEditable": false,
+            "matrixName": "SGM",
+            "name": "EEFamily",
+            "typeaheadDisplayName": "EEFamily ( SGM )",
+            "userDefined": false
+        }
+    ],
+    "%vlocity_namespace%__VersionNumber__c": 3,
+    "Name": "MedicalPlansPricing v3",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/3/%vlocity_namespace%__CalculationProcedure__c/MedicalPlansPricing"
+}

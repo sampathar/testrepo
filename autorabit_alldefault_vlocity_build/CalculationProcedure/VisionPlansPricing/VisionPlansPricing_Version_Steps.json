@@ -1,0 +1,211 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "SGV",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/SGV",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "VisionPlansPricing",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/VisionPlansPricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "VisionPlansPricing",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/VisionPlansPricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "a20962",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "QTR"
+            },
+            {
+                "columnKey": "d462bf",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "PlanID"
+            },
+            {
+                "columnKey": "5cacbd",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "LIVES"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "77c4cf",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "EE"
+            },
+            {
+                "columnKey": "4935a5",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "EESpouse"
+            },
+            {
+                "columnKey": "52db66",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "EEChild"
+            },
+            {
+                "columnKey": "8f2dde",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "EEFamily"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"EE\":\"SGV__EE\",\"EESpouse\":\"SGV__EESpouse\",\"EEChild\":\"SGV__EEChild\",\"EEFamily\":\"SGV__EEFamily\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "C1EE * SGV__EE + C1EESp * SGV__EESpouse + C1EECh * SGV__EEChild + C1EEFa * SGV__EEFamily",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "C1EE",
+                "dataType": "Number",
+                "text": "C1EE",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGV__EE",
+                "dataType": "Number",
+                "text": "EE ( SGV )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "C1EESp",
+                "dataType": "Number",
+                "text": "C1EESp",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGV__EESpouse",
+                "dataType": "Number",
+                "text": "EESpouse ( SGV )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "C1EECh",
+                "dataType": "Number",
+                "text": "C1EECh",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGV__EEChild",
+                "dataType": "Number",
+                "text": "EEChild ( SGV )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "C1EEFa",
+                "dataType": "Number",
+                "text": "C1EEFa",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGV__EEFamily",
+                "dataType": "Number",
+                "text": "EEFamily ( SGV )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "VisionPlansPricing",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/VisionPlansPricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "VisionPlansPricing",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/VisionPlansPricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "C1EE"
+            },
+            {
+                "dataType": "Number",
+                "name": "C1EESp"
+            },
+            {
+                "dataType": "Number",
+                "name": "C1EECh"
+            },
+            {
+                "dataType": "Number",
+                "name": "C1EEFa"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "C1Total",
+            "dataType": "Currency",
+            "name": "C1Total"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"C1Total\":\"C1Total\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

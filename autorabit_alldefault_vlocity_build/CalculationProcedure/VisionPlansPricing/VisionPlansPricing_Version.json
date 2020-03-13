@@ -1,0 +1,144 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "VisionPlansPricing",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/VisionPlansPricing",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "VisionPlansPricing",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "VisionPlansPricing_Version_Steps.json",
+    "%vlocity_namespace%__Constants__c": [
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "VisionPlansPricing v4",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"QTR\":\"Q2_2018\",\"PlanID\":\"0RS3\",\"LIVES\":\"TwoToFour\",\"C1EE\":\"1\",\"C1EESp\":\"1\",\"C1EECh\":\"1\",\"C1EEFa\":\"1\"}",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "GetProductAttributesService",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 4,
+    "%vlocity_namespace%__StartDateTime__c": "2016-07-27T20:59:13.000Z",
+    "%vlocity_namespace%__Variables__c": [
+        {
+            "alias": "C1EE",
+            "dataType": "Number",
+            "isEditable": false,
+            "name": "C1EE",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C1EESp",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C1EESp",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C1EECh",
+            "dataType": "Number",
+            "isEditable": false,
+            "name": "C1EECh",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C1EEFa",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "C1EEFa",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "C1Total",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "C1Total",
+            "typeaheadDisplayName": "",
+            "userDefined": true
+        },
+        {
+            "alias": "QTR",
+            "dataType": "Text",
+            "index": 1,
+            "isEditable": false,
+            "matrixName": "SGV",
+            "name": "QTR",
+            "typeaheadDisplayName": "QTR",
+            "userDefined": false
+        },
+        {
+            "alias": "PlanID",
+            "dataType": "Text",
+            "index": 1,
+            "isEditable": false,
+            "matrixName": "SGV",
+            "name": "PlanID",
+            "typeaheadDisplayName": "PlanID",
+            "userDefined": false
+        },
+        {
+            "alias": "LIVES",
+            "dataType": "Text",
+            "index": 1,
+            "isEditable": false,
+            "matrixName": "SGV",
+            "name": "LIVES",
+            "typeaheadDisplayName": "LIVES",
+            "userDefined": false
+        },
+        {
+            "alias": "SGV__EE",
+            "dataType": "Number",
+            "index": 1,
+            "isEditable": false,
+            "matrixName": "SGV",
+            "name": "EE",
+            "typeaheadDisplayName": "EE ( SGV )",
+            "userDefined": false
+        },
+        {
+            "alias": "SGV__EESpouse",
+            "dataType": "Number",
+            "index": 1,
+            "isEditable": false,
+            "matrixName": "SGV",
+            "name": "EESpouse",
+            "typeaheadDisplayName": "EESpouse ( SGV )",
+            "userDefined": false
+        },
+        {
+            "alias": "SGV__EEChild",
+            "dataType": "Number",
+            "index": 1,
+            "isEditable": false,
+            "matrixName": "SGV",
+            "name": "EEChild",
+            "typeaheadDisplayName": "EEChild ( SGV )",
+            "userDefined": false
+        },
+        {
+            "alias": "SGV__EEFamily",
+            "dataType": "Number",
+            "index": 1,
+            "isEditable": false,
+            "matrixName": "SGV",
+            "name": "EEFamily",
+            "typeaheadDisplayName": "EEFamily ( SGV )",
+            "userDefined": false
+        }
+    ],
+    "%vlocity_namespace%__VersionNumber__c": 4,
+    "Name": "VisionPlansPricing v4",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/VisionPlansPricing"
+}

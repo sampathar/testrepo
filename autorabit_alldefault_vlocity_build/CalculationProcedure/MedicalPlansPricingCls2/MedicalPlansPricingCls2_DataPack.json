@@ -1,0 +1,11 @@
+{
+    "%vlocity_namespace%__ActionClassName__c": "",
+    "%vlocity_namespace%__CalculationProcedureVersion__c": "MedicalPlansPricingCls2_Version.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "MedicalPlansPricingCls2",
+    "Name": "MedicalPlansPricingCls2",
+    "RecordTypeId": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/MedicalPlansPricingCls2"
+}
