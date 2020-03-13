@@ -1,0 +1,5 @@
+projectPath: ./autorabit_alldefault_vlocity_build
+manifest:
+- CalculationProcedure/GACCalculationProcedure
+- CalculationProcedure/GAMewaAgeGenderFactorPerMember
+maxDepth: -1

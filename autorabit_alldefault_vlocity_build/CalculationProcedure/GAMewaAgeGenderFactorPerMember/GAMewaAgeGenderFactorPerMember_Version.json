@@ -1,0 +1,32 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "GAMewaAgeGenderFactorPerMember",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/GAMewaAgeGenderFactorPerMember",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "GAMewaAgeGenderFactorPerMember",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "GAMewaAgeGenderFactorPerMember_Version_Steps.json",
+    "%vlocity_namespace%__CalculationProcedureVariable__c": "GAMewaAgeGenderFactorPerMember_Version_Variables.json",
+    "%vlocity_namespace%__Constants__c": [
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "2020-05-01T03:55:00.000Z",
+    "%vlocity_namespace%__GlobalKey__c": "GAMewaAgeGenderFactorPerMember v2",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"Gender\":\"F\",\"Age\":\"24\",\"Coverage\":\"SCRBR\"}",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 0,
+    "%vlocity_namespace%__StartDateTime__c": "2019-04-26T19:22:00.000Z",
+    "%vlocity_namespace%__Variables__c": "",
+    "%vlocity_namespace%__VersionNumber__c": 2,
+    "Name": "GAMewaAgeGenderFactorPerMember v2",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/GAMewaAgeGenderFactorPerMember"
+}
